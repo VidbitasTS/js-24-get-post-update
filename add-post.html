@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/helper.js" defer></script>
+    <script src="./js/add-post.js" defer></script>
+</head>
+
+<body>
+    <div class="container add-post post">
+        <h1>Create new post</h1>
+        <form class="flex flex-col max-w-300">
+            <input type="text" id="title" placeholder="Title" required value="My first Post">
+            <input type="number" id="reactions" placeholder="reactions" value="10" step="1" min="0" required>
+            <input type="number" id="userId" placeholder="userId" required value="15">
+            <textarea name="body" id="body" placeholder="Your text" required>Something about My first Post</textarea>
+            <input type="text" id="tags" placeholder="Pridekite tagus atskirtus kableliu" required>
+            <button type="submit" class="">Create</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

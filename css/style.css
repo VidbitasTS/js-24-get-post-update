@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+@import 'reset.css';
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.main-nav__link {
+    display: inline-block;
+    padding: 0.8em 1.6em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: normal;
+}
+
+.main-nav__link:hover {
+    background-color: rgb(216, 216, 216);
+    color: #2250fc;
+}
+
+.main-title {
+    margin-top: 10px;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.post {
+    background-color: #fff;
+    padding: 24px;
+}
+
+.post__reactions {
+    color: #c2c2c2;
+    font-size: 12px;
+}
+
+.post h3 {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    line-height: 23px;
+    margin-bottom: 16px;
+    color: #444;
+    font-weight: 600;
+}
+
+.post__text {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #777;
+}
+
+.post__link {
+    color: #484848;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+}
+
+.post-tags {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.post-tags li {
+    background-color: #2250fc;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 16px;
+    border-radius: 50px;
+}
+
+
+/* Single Page ================================================================= */
+
+.single-post {
+    background-color: #fff;
+}
+
+.single-post .layout {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 1rem;
+}
+
+.single-post aside {
+    border-left: 1px solid #e6e8eb;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.single-post .post-tags li {
+    border: 2px solid #e6e8eb;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 5px 14px;
+    margin: 0 2px 5px 0;
+    background-color: transparent;
+    color: #484848;
+}
+
+.single-post .post-tags li:hover {
+    background-color: #2250fc;
+    border-color: #2250fc;
+    color: #fff;
+}
