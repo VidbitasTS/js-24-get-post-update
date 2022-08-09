@@ -27,7 +27,8 @@ formEl.addEventListener('submit', (e) => {
 
 // siusti post requesta i backend
 async function sendDataToCreatePost(newPost) {
-    const resp = await fetch(`${baseUrl}/add`, {
+    //   const resp = await fetch(`${baseUrl}/add`, {
+    const resp = await fetch(baseUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

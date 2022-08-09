@@ -12,8 +12,7 @@ const postsContainerEl = document.querySelector('.posts-container');
 async function init() {
     const postsArr = await getPostsFromApi(baseUrl);
     await makePostsList(postsArr);
-    setTimeout(checkPostCreateStatus();, 500)
-
+    setTimeout(checkPostCreateStatus(), 500);
 }
 init();
 
@@ -24,7 +23,8 @@ init();
 async function getPostsFromApi(url) {
     const resp = await fetch(url);
     const dataBack = await resp.json();
-    const posts = dataBack.posts;
+    //   const posts = dataBack.posts;
+    const posts = dataBack;
     console.log('posts ===', posts);
     return posts;
 }
