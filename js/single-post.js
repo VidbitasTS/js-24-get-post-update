@@ -20,7 +20,7 @@ init();
 async function getPostData(url) {
     const resp = await fetch(url);
     const dataBack = await resp.json();
-    const singlePostData = dataBack;
+    const singlePostData = dataBack.posts;
     console.log('singlePostData ===', singlePostData);
     return singlePostData;
 }
