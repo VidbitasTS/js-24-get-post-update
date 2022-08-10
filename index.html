@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <title>JS project</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/helper.js" defer></script>
@@ -12,12 +14,27 @@
 </head>
 
 <body>
-
-
     <div class="container">
         <h1 class="main-title">Our posts project</h1>
-        <div class="posts-container">
+        <p class="success"></p>
+        <div class="div_filter">
+            <fieldset>
+                <legend>Filtered tags</legend>
+                <!-- <input type="text" style="display: inline" placeholder="Rasyti per kableli"> -->
+                <select name="tags_filter" id="tags_filter" class="tags_filter" style="display: inline">
+                
+            </select>
+                <!-- <button>Filtered</button> -->
+            </fieldset>
+            <fieldset>
+                <form class="flex">
+                    <input type="search" placeholder="Search term" id="search">
+                    <button type="submit">Search</button>
+                </form>
+            </fieldset>
+        </div>
 
+        <div class="posts-container">
             <div class="post">
                 <ul class="post-tags">
                     <li>red</li>
@@ -29,10 +46,7 @@
                 <a class="post__link" href="/">Read more > </a>
             </div>
         </div>
-
     </div>
-
-
 </body>
 
 </html>

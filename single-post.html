@@ -1,42 +1,85 @@
-<<!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JS project</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="./js/helper.js" defer></script>
-        <script src="./js/single-post.js" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>JS project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/helper.js" defer></script>
+    <script src="./js/single-post.js" defer></script>
+</head>
 
-    <body>
+<body>
+    <div class="container single-post">
 
-
-        <div class="container single-post">
-
-            <div class="layout">
-                <main class="post">
-                    <h1 class="main-title">Our posts project</h1>
-                    <p class="post__reactions"><span>2</span> reactions</p>
-                    <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, doloribus!</p>
-                    <a class="post__link" href="/">
+        <div class="layout">
+            <main class="post">
+                <h1 class="main-title">Our posts project</h1>
+                <p class="post__reactions"><span>2</span> reactions</p>
+                <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, doloribus!</p>
+                <a class="post__link" href="/">
                   &lt; Go back</a>
-                </main>
+            </main>
 
+            <aside>
+                <h3>Tags</h3>
+                <ul class="post-tags">
+                    <li>red</li>
+                    <li>green</li>
+                </ul>
+            </aside>
+        </div>
 
-                <aside>
-                    <h3>Tags</h3>
-                    <ul class="post-tags">
-                        <li>red</li>
-                        <li>green</li>
-                    </ul>
-                </aside>
+        <div class="comments">
+            <p class="total"></p>
+            <div class="comments_list"></div>
+        </div>
 
+        <!-- <div class="form_div">
+            <p class="succ"></p>
+            <form action="" id="formId">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" class="name" type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
 
-            </div>
+                    <label for="email">Email</label>
+                    <input name="email" class="email" type="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
 
-    </body>
+                    <label for="web">Website</label>
+                    <input name="web" class="web" type="tex" id="web" placeholder="Enter Website">
+                </div>
+                <div class="form-group">
+                    <label for="comm">Your comment</label>
+                    <textarea name="text" class="text" rows="5" placeholder="Enter comment"></textarea>
+                </div>
+                <div class="btn-form-div1">
+                    <button class="btn-form">SUBMIT COMMENT</button>
+                </div>
+            </form>
+        </div> -->
 
-    </html>
+        <div class="form_div">
+            <p class="succ"></p>
+            <form class="flex flex-col max-w-300">
+                <label for="userId" required>User Id</label>
+                <input class="userId" type="number" id="userId" placeholder="userId" required value="">
+                <label for="text">Your comment</label>
+                <textarea class="text" name="text" id="text" placeholder="Your text" required>Something about My first Post</textarea>
+                <!-- <input type="text" id="tags" placeholder="Pridekite tagus atskirtus kableliu" required> -->
+                <div class="btn-form-div1">
+                    <button class="btn-form" type="submit">SUBMIT COMMENT</button>
+                </div>
+            </form>
+        </div>
+
+</body>
+
+</html>
